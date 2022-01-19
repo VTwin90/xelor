@@ -36,56 +36,81 @@
 
     <title>Xelor {% block extra_title %}{% endblock %}</title>
 </head>
+
 <body>
     <header class="container-fluid fixed-top">
-        
+
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">XELOR</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  BRANDS
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">OMEGA</a></li>
-                  <li><a class="dropdown-item" href="#">ROLEX</a></li>
-                  <li><a class="dropdown-item" href="#">GUCCI</a></li>
-                  <li><a class="dropdown-item" href="#">ARMANI</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">ALL PRODUCTS</a></li>
+            <a class="navbar-brand" href="#">XELOR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            BRANDS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">OMEGA</a></li>
+                            <li><a class="dropdown-item" href="#">ROLEX</a></li>
+                            <li><a class="dropdown-item" href="#">GUCCI</a></li>
+                            <li><a class="dropdown-item" href="#">ARMANI</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">ALL PRODUCTS</a></li>
+                        </ul>
+                    </li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2 w-100" type="search" placeholder="What are you looking for?" aria-label="Search">
-              <button class="btn btn-primary" type="submit">Search</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">			
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LOGIN</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">SIGN UP</a>
-                  </li>
-            </ul>
-          </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">LOGIN</a></li>
+                            <li><a class="dropdown-item" href="#">SIGN UP</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">MY PROFILE</a></li>
+                            <li><a class="dropdown-item" href="#">ADMIN</a></li>
+                            <li><a class="dropdown-item" href="#">LOGOUT</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-bag fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2 w-100" type="search" placeholder="Search here..."
+                        aria-label="Search">
+                    <button class="btn btn-primary" type="submit">
+                        <span class="fa fa-search"></span>
+                    </button>
+                </form>
+            </div>
         </div>
-      </nav>
+    </nav>
+
 
     {% if messages %}
-        <div class="message-container"></div>
+    <div class="message-container"></div>
     {% endif %}
 
     {% block page_header %}
@@ -96,7 +121,7 @@
 
     {% block postloadjs %}
     {% endblock %}
-    
+
 </body>
 
 </html>
