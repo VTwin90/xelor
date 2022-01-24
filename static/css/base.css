@@ -4,11 +4,26 @@ html, body {
 }
 
 body{
-    background: url('/media/') no-repeat center center fixed; 
+    background: url('/media/hero_img.jpg') no-repeat center center fixed; 
     background-size: cover;
     height: calc(100vh - 164px);
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3{
+    color: #D8000E;
+}
 
+.primary_btn {
+    background: #D8000E;
+    color: #fff;
+    min-width: 260px;
+}
+
+.primary_btn:hover,
+.primary_btn:active,
+.primary_btn:focus {
+    background: #fff;
+    color: #D8000E;
+}
