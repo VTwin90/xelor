@@ -25,6 +25,15 @@ p {
     min-width: 260px;
 }
 
+/* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    display: none;
+    color:#C4C4C4;
+}
+
 .primary_btn:hover,
 .primary_btn:active,
 .primary_btn:focus {
@@ -49,6 +58,20 @@ p {
 .product-background{
     background: #F9F9F9;
 }
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+}
+
+.btt-link,
+.primary_btn {
+    cursor: pointer;
+}
+
 
 /* -------------------------------- Media Queries */
 
