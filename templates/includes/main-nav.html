@@ -1,22 +1,22 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="omega-link">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=omega" id="omega-link">
                 OMEGA
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="rolex-link">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=rolex" id="rolex-link">
                 ROLEX
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="armani-link">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=armani" id="armani-link">
                 ARMANI
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="gucci-link">
+            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=gucci" id="gucci-link">
                 GUCCI
             </a>
         </li>
@@ -38,9 +38,9 @@
                 SPECIAL OFFERS
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">NEW ARRIVALS</a>
-                <a href="" class="dropdown-item">DEALS</a>
-                <a href="" class="dropdown-item">ALL SPECIALS</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">NEW ARRIVALS</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">DEALS</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">ALL SPECIALS</a>
             </div>
         </li>
     </ul>
