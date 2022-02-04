@@ -23,6 +23,16 @@ p {
     background: #D8000E;
     color: #fff;
     min-width: 260px;
+    min-height: 50px;
+    border: 1px solid #c40d2e;
+}
+
+.secondary_btn {
+    background: #fff;
+    color: #555;
+    min-width: 260px;
+    min-height: 50px;
+    border: 1px solid #e2e2e2;
 }
 
 /* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view */
@@ -37,8 +47,17 @@ p {
 .primary_btn:hover,
 .primary_btn:active,
 .primary_btn:focus {
-    background: #fff;
+    background: #FFF; 
     color: #D8000E;
+    border: 1px solid #c40d2e;
+}
+
+.secondary_btn:hover,
+.secondary_btn:active,
+.secondary_btn:focus {
+    background: #D8000E; 
+    color: #FFF;
+    border: 1px solid #c40d2e;
 }
 
 .icon {
