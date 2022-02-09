@@ -38,6 +38,29 @@
                 <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
+                        {% with product.sizes as s %}
+                            {% if s %}
+                                <div class="col-12">
+                                    <p><strong>BRACELET SIZE:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_size" id='id_product_size'>
+                                        <option value="5.10">5.10 inches</option>
+                                        <option value="5.30">5.30 inches</option>
+                                        <option value="5.50">5.50 inches</option>
+                                        <option value="5.70">5.70 inches</option>
+                                        <option value="5.90">5.90 inches</option>
+                                        <option value="6.10">6.10 inches</option>
+                                        <option value="6.30">6.30 inches</option>
+                                        <option value="6.50">6.50 inches</option>
+                                        <option value="6.70">6.70 inches</option>
+                                        <option value="6.90">6.90 inches</option>
+                                        <option value="7.10">7.10 inches</option>
+                                        <option value="7.30">7.30 inches</option>
+                                        <option value="7.70" selected>7.70 inches(Standard)</option>
+                                        <option value="7.90">7.90 inches</option>
+                                        <option value="8.10">8.10 inches</option>
+                                    </select>
+                                </div>
+                            {% endif %}
                         <div class="col-12">
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
@@ -47,7 +70,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12">
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
                             <input type="submit" class="primary_btn btn btn-lg rounded-0 py-3 mt-4" value="ADD TO BASKET">
                         </div>
                         <a href="{% url 'products' %}" class="btn secondary_btn rounded-0 btn-lg mt-3">
@@ -57,6 +80,7 @@
                             <span>KEEP SHOPPING</span>
                         </a>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% endwith %}
                     </div>
                 </form>
             </div>
