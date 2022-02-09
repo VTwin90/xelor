@@ -87,8 +87,14 @@ p {
 }
 
 .btt-link,
-.primary_btn {
+.primary_btn,
+.update_icon,
+.remove_icon {
     cursor: pointer;
+}
+
+.qty_input {
+    width: 150px;
 }
 
 
