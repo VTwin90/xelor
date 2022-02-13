@@ -55,9 +55,9 @@
                                     <p class="my-0">${{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-25">
-                                    <form class="form update-form" method="POST" action="">
+                                    <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                         {% csrf_token %}
-                                        <div class="form-group qty_input">
+                                        <div class="form-group">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
                                                     <button class="decrement-qty btn btn-sm btn-black rounded-0" 
@@ -79,18 +79,18 @@
                                                         </span>
                                                     </button>
                                                 </div>
-                                                <a class="update_icon mx-auto">
-                                                    <i class="fas fa-sync-alt fa-lg icon"></i>
-                                                </a>
-                                                <a class="remove_icon float-right px-2" id="remove_{{ item.item_id }}" data-size="{{ item.size }}">
-                                                    <i class="far fa-trash-alt fa-lg icon"></i>
-                                                </a>
                                                 {% if item.product.sizes %}
                                                     <input type="hidden" name="product_size" value="{{ item.size }}">
                                                 {% endif %}
                                             </div>
                                         </div>
                                     </form>
+                                    <a class="update-link update_icon">
+                                        <i class="fas fa-sync-alt fa-lg icon"></i>
+                                    </a>
+                                    <a class="remove-item remove_icon float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+                                        <i class="far fa-trash-alt fa-lg icon"></i>
+                                    </a>
                                 </td>
                                 <td class="py-3">
                                     <p class="my-0">${{ item.product.price }}</p>
@@ -139,19 +139,21 @@
     {{ block.super }}
         <script src="{% static 'js/quantity.js' %}"></script>
 <!-- Below script is from the Boutique Ado project -->
-<script>
-    // Update quantity on click of update button
+
+<script type="text/javascript">
+    // Update quantity on click
     $('.update-link').click(function(e) {
         const form = $(this).prev('.update-form');
         form.submit();
     })
 
-    // Remove item and reload on click of delete button
+    // Remove item and reload on click
     $('.remove-item').click(function(e) {
         const csrfToken = "{{ csrf_token }}";
         const itemId = $(this).attr('id').split('remove_')[1];
-        const url = `/cart/remove/${itemId}/`;
-        const data = {'csrfmiddlewaretoken': csrfToken};
+        const size = $(this).data('product_size');
+        const url = `/bag/remove/${itemId}/`;
+        const data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
         $.post(url, data)
          .done(function() {
