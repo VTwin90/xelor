@@ -115,6 +115,18 @@ p {
     height: 2px;
 }
 
+.toast-header .btn-close {
+    margin-right: -0.375rem;
+    margin-left: 70%;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
 
 /* -------------------------------- Media Queries */
 
