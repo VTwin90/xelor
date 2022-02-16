@@ -51,26 +51,26 @@
                                 </a>
                             </div>
                             <div class="col-7">
-                                <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                                <p class="my-0 mt-2"><strong>{{ item.product.name }}</strong></p>
+                                <p class="my-0 small">Size: {% if item.product.sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                                 <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                             </div>
-                            <div class="col-3 text-right">
+                            <div class="col-3 text-right mt-2">
                                 <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                             </div>
                         </div>
                     {% endfor %}
-                    <hr class="my-0">
+                    <hr class="my-0 mt-2 order-summary">
                     <div class="row text-black text-right">
                         <div class="col-7 offset-2">
-                            <p class="my-0">Order Total:</p>
-                            <p class="my-0">Delivery:</p>
-                            <p class="my-0">Grand Total:</p>
+                            <p class="my-0 mt-2">Order Total:</p>
+                            <p class="my-0 mt-2"> Shipping:</p>
+                            <p class="my-0 mt-2">Grand Total:</p>
                         </div>
                         <div class="col-3">
-                            <p class="my-0">${{ total | floatformat:2 }}</p>
-                            <p class="my-0">${{ delivery | floatformat:2 }}</p>
-                            <p class="my-0"><strong>${{ grand_total | floatformat:2 }}</strong></p>
+                            <p class="my-0 mt-2">${{ total | floatformat:2 }}</p>
+                            <p class="my-0 mt-2">${{ delivery | floatformat:2 }}</p>
+                            <p class="my-0 mt-2 mb-2"><strong>${{ grand_total | floatformat:2 }}</strong></p>
                         </div>
                     </div>
                 </div>
@@ -103,9 +103,9 @@
                                     </label>
                                     <input class="form-check-input ml-2 mr-0" type="checkbox" id="id-save-info" name="save-info" checked>
                                 {% else %}
-                                    <label class="form-check-label" for="id-save-info">
-                                        <a class="text-info" href="{% url 'account_signup' %}">CREATE AN ACCOUNT</a> OR 
-                                        <a class="text-info" href="{% url 'account_login' %}">LOGIN</a> TO SAVE THIS INFORMATION
+                                    <label class="form-check-label text-center" for="id-save-info">
+                                        <a class="text_info" href="{% url 'account_signup' %}">CREATE AN ACCOUNT</a> OR 
+                                        <a class="text_info" href="{% url 'account_login' %}">LOGIN</a> TO SAVE THIS INFORMATION
                                     </label>
                                 {% endif %}
                             </div>
@@ -116,30 +116,32 @@
                         <div class="card-header">
                             <p class="text-muted">PAYMENT</p>
                         </div>
-                        <fieldset class="px-3">
+                        <fieldset class="px-3 mt-4">
                         <!-- A Stripe card element will go here -->
-                            <div class="mb-3" id="card-element"></div>
+                            <div class="mb-3 stripe-style-input textinput textInput form-control" id="card-element"></div>
 
                         <!-- Used to display form errors -->
-                            <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
+                            <div class="mb-2 text-danger" id="card-errors" role="alert"></div>
                         </fieldset>
                         <!-- Buttons -->
-                        <div class="submit-button text-right mt-5 mb-2">                    
-                            <a href="{% url 'view_bag' %}" class="btn secondary_btn rounded-0 btn-lg">
-                                <span class="icon">
-                                    <i class="fas fa-chevron-left"></i>
-                                </span>
-                                <span>KEEP SHOPPING</span>
-                            </a>
-                            <button id="submit-button" class="btn btn-black rounded-0">
-                                <span class="primary_btn btn btn-lg rounded-0 py-3">PAY NOW</span>
-                            </button>
-                            <p class="small text-danger my-0">
+                        <div class="submit-button text-right mt-2 mb-4">
+                            <p class="small text-danger mb-3 text-center">
                                 <span class="icon">
                                     <i class="fas fa-exclamation-circle"></i>
                                 </span>
-                                <span>Your card will be charged <strong>${{ grand_total|floatformat:2 }}</strong></span>
+                                <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
                             </p>
+                            <div class="mx-auto text-center px-4">
+                                <a href="{% url 'view_bag' %}" id="adjust-bag-btn" class="btn rounded-0 btn-lg">
+                                    <span>
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="text-uppercase">Adjust Bag</span>
+                                </a>
+                                <button id="submit-button" class="btn btn-lg rounded-0">
+                                    <span class="text-uppercase">Pay Now</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </form>
