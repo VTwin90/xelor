@@ -75,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="col-12 col-lg-6">
                  <!-- Shipping -->
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -146,4 +146,11 @@
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
