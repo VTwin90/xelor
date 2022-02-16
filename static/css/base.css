@@ -35,6 +35,9 @@ p {
     border: 1px solid #e2e2e2;
 }
 
+.logo {
+    margin-left: 200px;
+}
 
 /* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view */
 #btn-back-to-top {
