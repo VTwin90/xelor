@@ -63,6 +63,10 @@ a.text_info{
     color: #c40d2e;
 }
 
+h6.order-text {
+    color: #555;
+}
+
 /* ------------- Loader screen styles -------------*/
 #loading-overlay {
     display: none;
