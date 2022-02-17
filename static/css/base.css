@@ -25,24 +25,42 @@ p {
 }
 
 .primary_btn {
+    width:255px;
+    height:55px;
+    text-align:center;
+    min-width:120px;
     background: #D8000E;
     color: #fff;
-    min-width: 260px;
-    min-height: 50px;
     border: 1px solid #c40d2e;
 }
 
 .secondary_btn {
+    width:255px;
+    height:55px;
+    text-align:center;
+    min-width:120px;
     background: #fff;
     color: #555;
-    min-width: 260px;
-    min-height: 50px;
     border: 1px solid #e2e2e2;
 }
 
 .logo {
     margin-left: 200px;
 }
+
+hr.footer{
+    color: #555555;
+    size: 100;
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 15px;
+}
+
+.form-check-label{
+    color: #555;
+}
+
 
 /* CSS Style customised code from: https://mdbootstrap.com/snippets/standard/mdbootstrap/2964350#css-tab-view */
 #btn-back-to-top {
@@ -134,7 +152,6 @@ p {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 
 
 /* -------------------------------- Media Queries */

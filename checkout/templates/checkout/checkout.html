@@ -133,15 +133,15 @@
                                 </span>
                                 <span>Your card will be charged <strong>£{{ grand_total|floatformat:2 }}</strong></span>
                             </p>
-                            <div class="mx-auto text-center px-4">
-                                <a href="{% url 'view_bag' %}" id="adjust-bag-btn" class="btn rounded-0 btn-lg">
+                            <div class="mx-auto text-center">
+                                <a href="{% url 'view_bag' %}" class="btn secondary_btn rounded-0 btn-lg">
                                     <span>
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
-                                    <span class="text-uppercase">Adjust Bag</span>
+                                    <span>ADJUST BAG</span>
                                 </a>
-                                <button id="submit-button" class="btn btn-lg rounded-0">
-                                    <span class="text-uppercase">Pay Now</span>
+                                <button class="primary_btn btn btn-lg rounded-0 btn-lg">
+                                    <span>PAY NOW</span>
                                 </button>
                             </div>
                         </div>

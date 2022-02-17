@@ -47,18 +47,6 @@ hr.order-summary {
     margin: 15px 0px 15px 0px;
 }
 
-#adjust-bag-btn {
-    background: #fff;
-    color: #555;
-    border: 1px solid #e2e2e2;
-}
-
-#submit-button{
-    background: #D8000E;
-    color: #fff;
-    border: 1px solid #c40d2e;
-}
-
 a.text_info{
     color: #c40d2e;
 }
