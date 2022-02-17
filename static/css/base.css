@@ -19,6 +19,11 @@ p {
     color: #555555;
 }
 
+#banner {
+    background-color:#D8000E;
+    height: 40px;
+}
+
 .primary_btn {
     background: #D8000E;
     color: #fff;
