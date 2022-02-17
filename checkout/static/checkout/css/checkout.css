@@ -67,6 +67,16 @@ h6.order-text {
     color: #555;
 }
 
+select,
+select option {
+    color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+    color: #aab7c4 !important;
+}
+
 /* ------------- Loader screen styles -------------*/
 #loading-overlay {
     display: none;
