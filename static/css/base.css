@@ -153,6 +153,14 @@ hr.footer{
     overflow-y: auto;
 }
 
+/* Footer: fixed. */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 10;
+}
+
 
 /* -------------------------------- Media Queries */
 
