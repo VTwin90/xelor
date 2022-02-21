@@ -11,8 +11,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
     color: #D8000E;
+}
+
+h6, h4 {
+    color: #555;
 }
 
 p {
@@ -194,5 +198,9 @@ footer {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
