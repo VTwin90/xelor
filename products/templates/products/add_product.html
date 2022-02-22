@@ -23,10 +23,10 @@
 
     <div class="row d-flex justify-content-center">
         <div class="col-12 col-md-6">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'add_product' %}" class="form product-mg-form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}
-                <div class="text-right mt-4 mb-4">
+                <div class="text-right mt-4 mb-4 d-flex justify-content-center">
                     <a class="btn secondary_btn rounded-0 btn-lg" href="{% url 'products' %}">Cancel</a>
                     <button class="primary_btn btn btn-lg rounded-0 btn-lg" type="submit">Add Product</button>
                 </div>
