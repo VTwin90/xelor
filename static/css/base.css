@@ -128,6 +128,10 @@ hr.footer{
     width: 150px;
 }
 
+.input-group{
+    width: max-content;
+}
+
 
 /* -------------------------------- Toasts */
 

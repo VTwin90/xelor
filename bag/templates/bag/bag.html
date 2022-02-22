@@ -27,18 +27,16 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
+    <div class="row d-flex justify-content-center">
+        <div class="col-12 col-md-7">
             {% if bag_items %}
                 <div class="table-responsive rounded">
                     <table class="table table-sm table-borderless">
-                        <thead class="text-black">
+                        <thead>
                             <tr>
-                                <th scope="col">Product Info</th>
+                                <th scope="col">Product</th>
                                 <th scope="col"></th>
                                 <th scope="col">Price</th>
-                                <th scope="col">Qty</th>
-                                <th scope="col">Subtotal</th>
                             </tr>
                         </thead>
 
@@ -55,6 +53,12 @@
                                 <td class="py-3">
                                     <p class="my-0">${{ item.product.price }}</p>
                                 </td>
+                                <div class="d-flex justify-content-center">
+                                    <tr>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Subtotal</th>
+                                    </tr>
+                                </div>
                                 <td class="py-3 w-25">
                                     <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                                         {% csrf_token %}
@@ -86,15 +90,15 @@
                                             </div>
                                         </div>
                                     </form>
-                                    <a class="update-link update_icon">
-                                        <i class="fas fa-sync-alt fa-lg icon"></i>
+                                    <a class="update-link update_icon float-none">
+                                        <i class="fas fa-sync-alt fa-lg icon mt-3 px-3"></i>
                                     </a>
-                                    <a class="remove-item remove_icon float-right" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
+                                    <a class="remove-item remove_icon float-none" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}">
                                         <i class="far fa-trash-alt fa-lg icon"></i>
                                     </a>
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                    <td class="py-3">
+                                        <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                    </td>
                                 </td>
                             </tr>
                         {% endfor %}
