@@ -31,7 +31,7 @@ def contact(request):
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
-                contact_form = ContactForm(initial={
+                form = ContactForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
                 })
