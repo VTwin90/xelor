@@ -3,11 +3,11 @@ $("[type='number']").keypress(function (evt) {
     evt.preventDefault();
 });
 
-// Disable +/- buttons outside 1-5 range
+// Disable +/- buttons outside 1-10 range
     function handleEnableDisable(itemId) {
         const currentValue = parseInt($(`#id_qty_${itemId}`).val());
         const minusDisabled = currentValue < 2;
-        const plusDisabled = currentValue > 5;
+        const plusDisabled = currentValue > 10;
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
@@ -44,3 +44,5 @@ $("[type='number']").keypress(function (evt) {
        const itemId = $(this).data('item_id');
        handleEnableDisable(itemId);
     });
+
+    
