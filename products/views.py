@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 
+
 # Create your views here.
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -137,3 +138,4 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+    

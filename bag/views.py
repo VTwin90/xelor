@@ -1,8 +1,12 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, 
+    HttpResponse, get_object_or_404
+)
 
 from django.contrib import messages
 
 from products.models import Product
+
 
 # Create your views here.
 
@@ -10,6 +14,7 @@ def view_bag(request):
     """ A view that renders the bags contents page """
 
     return render(request, 'bag/bag.html')
+
 
 def add_to_bag(request, item_id):
     """ Add a quantity of the specified product to the shopping bag """
@@ -26,13 +31,21 @@ def add_to_bag(request, item_id):
         if item_id in list(bag.keys()):
             if size in bag[item_id]['items_by_size'].keys():
                 bag[item_id]['items_by_size'][size] += quantity
-                messages.success(request, f'UPDATED SIZE {size.upper()} {product.name} QUANTITY TO {bag[item_id]["items_by_size"][size]}')
+                messages.success(
+                    request, f'UPDATED SIZE {size.upper()} {product.name} 
+                    QUANTITY TO {bag[item_id]["items_by_size"][size]}'
+                )
             else:
                 bag[item_id]['items_by_size'][size] = quantity
-                messages.success(request, f'ADDED SIZE {size.upper()} {product.name} TO YOUR BAG')
+                messages.success(
+                    request, f'ADDED SIZE {size.upper()} {product.name} 
+                    TO YOUR BAG'
+                )
         else:
             bag[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(request, f'ADDED SIZE {size.upper()} {product.name} TO YOUR BAG')
+            messages.success(
+                request, f'ADDED SIZE {size.upper()} {product.name} TO YOUR BAG'
+            )
     else:
         if item_id in list(bag.keys()):
             bag[item_id] += quantity
@@ -43,7 +56,8 @@ def add_to_bag(request, item_id):
 
     request.session['bag'] = bag
     return redirect(redirect_url)
-    
+
+
 def adjust_bag(request, item_id):
     """Adjust the quantity of the specified product to the specified amount"""
 
@@ -89,14 +103,18 @@ def remove_from_bag(request, item_id):
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
-            messages.success(request, f'REMOVED SIZE {size.upper()} {product.name} FROM YOUR BAG')
+            messages.success(request, 
+                f'REMOVED SIZE {size.upper()} {product.name} 
+                FROM YOUR BAG')
         else:
             bag.pop(item_id)
-            messages.success(request, f'REMOVED {product.name} FROM YOUR BAG')
+            messages.success(request, 
+                f'REMOVED {product.name} FROM YOUR BAG')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
 
     except Exception as e:
-        messages.error(request, f'ERROR REMOVING ITEM: {e}')
+        messages.error(request, 
+            f'ERROR REMOVING ITEM: {e}')
         return HttpResponse(status=500)

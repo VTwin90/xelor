@@ -14,9 +14,13 @@ def contact(request):
         }
     
         if form.is_valid():
-            messages.success(request, 'Successfully sent message, we will be in touch with you soon!')
+            messages.success(
+                request, 'Successfully sent message, we will be in touch with you soon!'
+            )
         else:
-            messages.error(request, 'Failed to send message. Please ensure the form is valid.')
+            messages.error(
+                request, 'Failed to send message. Please ensure the form is valid.'
+            )
 
     contact_form = ContactForm()
     template = 'contact/contact.html'
@@ -25,3 +29,4 @@ def contact(request):
     }
 
     return render(request, template, context)
+    
