@@ -1,6 +1,11 @@
-from django.shortcuts import render
-from .forms import ContactForm
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.views.decorators.http import require_POST
 from django.contrib import messages
+from django.conf import settings
+
+from .forms import ContactForm
+from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 
 # Create your views here.
 
@@ -13,13 +18,29 @@ def contact(request):
             'email': request.POST['email'],
             'message': request.POST['message'],
         }
-    
-    contact_form = ContactForm(form_data)
-    if contact_form.is_valid():
-        messages.success(request, 'Successfully sent message, we will be in touch with you soon!')
-    else:
-        messages.error(request, 'Failed to send message. Please ensure the form is valid.')
+        contact_form = ContactForm(form_data)
+        if contact_form.is_valid():
+            form = contact_form.save(commit=False)
+            form.save()
+            request.session['save_info'] = 'save-info' in request.POST
+            messages.success(request, 'Successfully sent message, we will be in touch with you soon!')
+        else:
+            messages.error(request, 'Failed to send message. Please ensure the form is valid.')
 
+       # Attempt to prefill the form with any info the user maintains in their profile
+        if request.user.is_authenticated:
+            try:
+                profile = UserProfile.objects.get(user=request.user)
+                contact_form = ContactForm(initial={
+                    'full_name': profile.user.get_full_name(),
+                    'email': profile.user.email,
+                })
+            except UserProfile.DoesNotExist:
+                contact_form = ContactForm()
+        else:
+            contact_form = ContactForm()
+
+    contact_form = ContactForm()
     template = 'contact/contact.html'
     context = {
         'contact_form': contact_form,
