@@ -95,13 +95,10 @@ def remove_from_bag(request, item_id):
             del bag[item_id]['items_by_size'][size]
             if not bag[item_id]['items_by_size']:
                 bag.pop(item_id)
-            messages.success(request, 
-                f'REMOVED SIZE {size.upper()} {product.name} 
-                FROM YOUR BAG')
+            messages.success(request, f'REMOVED SIZE {size.upper()} {product.name} FROM YOUR BAG')
         else:
             bag.pop(item_id)
-            messages.success(request, 
-                f'REMOVED {product.name} FROM YOUR BAG')
+            messages.success(request, f'REMOVED {product.name} FROM YOUR BAG')
 
         request.session['bag'] = bag
         return HttpResponse(status=200)
