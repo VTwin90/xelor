@@ -1,8 +1,13 @@
-// Disable +/- buttons outside 1-99 range
+// Disables the ability for the customer to type in a quantity into the quantity input box
+$("[type='number']").keypress(function (evt) {
+    evt.preventDefault();
+});
+
+// Disable +/- buttons outside 1-5 range
     function handleEnableDisable(itemId) {
         const currentValue = parseInt($(`#id_qty_${itemId}`).val());
         const minusDisabled = currentValue < 2;
-        const plusDisabled = currentValue > 98;
+        const plusDisabled = currentValue > 5;
         $(`#decrement-qty_${itemId}`).prop('disabled', minusDisabled);
         $(`#increment-qty_${itemId}`).prop('disabled', plusDisabled);
     }
