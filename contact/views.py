@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ContactForm
+from django.contrib import messages
 
 # Create your views here.
 
@@ -13,16 +14,12 @@ def contact(request):
             'message': request.POST['message'],
         }
     
-        if form.is_valid():
-            messages.success(
-                request, 'Successfully sent message, we will be in touch with you soon!'
-            )
-        else:
-            messages.error(
-                request, 'Failed to send message. Please ensure the form is valid.'
-            )
+    contact_form = ContactForm(form_data)
+    if contact_form.is_valid():
+        messages.success(request, 'Successfully sent message, we will be in touch with you soon!')
+    else:
+        messages.error(request, 'Failed to send message. Please ensure the form is valid.')
 
-    contact_form = ContactForm()
     template = 'contact/contact.html'
     context = {
         'contact_form': contact_form,
