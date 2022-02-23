@@ -7,4 +7,4 @@ class BlogForm(forms.ModelForm):
         model = Blog
         fields = '__all__'
 
-    image = forms.ImageField(label='Image', required=False,)
+   
