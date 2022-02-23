@@ -1,52 +1,51 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item d-block d-md-none">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'home' %}" id="home-link">
-                Home
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'home' %}" id="home-link">
+                HOME
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=omega" id="omega-link">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=omega" id="omega-link">
                 OMEGA
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=rolex" id="rolex-link">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=rolex" id="rolex-link">
                 ROLEX
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=armani" id="armani-link">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=armani" id="armani-link">
                 ARMANI
             </a>
         </li>
         <li class="nav-item">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=gucci" id="gucci-link">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'products' %}?category=gucci" id="gucci-link">
                 GUCCI
             </a>
         </li>
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="font-weight-bold nav-link mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 FIND YOUR WATCH
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">BY PRICE</a>
-                <a href="" class="dropdown-item ">BY STYLE</a>
-                <a href="" class="dropdown-item ">BY MATERIAL</a>
-                <a href="" class="dropdown-item">BY FEATURES</a>
-                <a href="{% url 'products' %}" class="dropdown-item">ALL SUGGESTIONS</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">NEW ARRIVALS</a>
+                <a href="{% url 'products' %}" class="dropdown-item">ALL PRODUCTS</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link " href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                SPECIAL OFFERS
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link mr-5" href="{% url 'contact' %}" id="contact-link">
+                CONTACT
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">NEW ARRIVALS</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">DEALS</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals" class="dropdown-item">ALL SPECIALS</a>
-            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="font-weight-bold nav-link mr-5" href="" id="blog-link">
+                BLOG
+            </a>
         </li>
     </ul>
     <div class="col-12 col-lg-2 my-auto py-1 py-lg-0">
