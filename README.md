@@ -13,7 +13,6 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
   - [Project Goals](<#project-goals>)
   - [Importance and Feasibility chart](<#importance-and-feasibility-chart>)
   - [User Stories](<#user-stories>)
-  - [Website Structure](<#website-structure>)
   - [Design Choices from UXD](<#design-choices-from-uxd>)
     - [Color Scheme](<#color-scheme>)
     - [Images](<#images>)
@@ -103,5 +102,49 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 
 * Other features further down the line will give the website an even better user experience by incorporating: a rating/like-system to showcase the most popular watches from customers. Also, to include a comment section(with avatar images): where users can give feedback on individual watches but also on the blog posts. Including more product images to improve users' view and perspective of the products. 
 
+
+#### [Back to top](<#contents>)
+
+<br>
+
+### **Design Choices from UXD**
+***
+
+The style is based on a minimalistic, readable, and contrasting design for easy flow and navigation, as well as maintaining consistency to allow the user to easily familiarise themselves with the website efficiently and intuitively.
+
+#### [Back to top](<#contents>)
+
+<br>
+
+### **Color Scheme**
+The general color scheme is white, red, grey and black. These colors will create a consistent style for the site. There are also other colors; from the hero image and product/blog images. 
+
+![Color Scheme](readme/images/colorscheme.png)
+
+<br>
+
+### **Images**
+The images are consistent of: 
+1. Hero image from Unsplash.
+2. Product and blog images which are taken from Omega, Rolex, Gucci and Armani websites and Unsplash.
+3. Not Found search image, empty shopping bag, 404 and 500, made through Figma. 
+
+<br>
+
+### **Typography**
+To keep a consistent and modern style, and for easy readability, the font used is Arial, and as backups; Helvetica and Sans-Serif.  
+
+#### [Back to top](<#contents>)
+
+<br>
+
+### **Wireframes**
+|Sketches|Wireframes|Designs|                         
+|:-----:|:----:|:----:|
+|[Sketches](readme/wireframes/sketches.jpg)| [Wireframes](readme/wireframes/wireframes.jpg) | [Designs](readme/wireframes/designs.jpg)
+
+<br>
+
+### **Design changes**
 
 #### [Back to top](<#contents>)
