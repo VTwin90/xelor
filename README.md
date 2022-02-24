@@ -90,3 +90,18 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 - As a **site owner** I want to be able to remove products.
 - As a **site owner** I want to be able to edit/update a blog post.
 - As a **site owner** I want to be able to delete a blog post
+
+#### [Back to top](<#contents>)
+
+<br>
+
+### **What is needed now and in the future?**
+
+* The developer wants an aesthetically pleasing and minimalistic website. This is to better showcase the main point: the watches. There will be a landing page to grab attention and options to log in or register to the site. The user has the option to browse the shop and buy products without being registered. But also get additional functions/services if the user has registered and logged in,
+
+* The owner could have their needs and more by using a mobile-first approach to a fully responsive website which would allow for easy navigation, use, and no diminished experiences on all viewport sizes.
+
+* Other features further down the line will give the website an even better user experience by incorporating: a rating/like-system to showcase the most popular watches from customers. Also, to include a comment section(with avatar images): where users can give feedback on individual watches but also on the blog posts. Including more product images to improve users' view and perspective of the products. 
+
+
+#### [Back to top](<#contents>)
