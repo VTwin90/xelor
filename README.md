@@ -245,7 +245,9 @@ Included in the **website** is:
 
 #### [Back to top](<#contents>)
 
-##### Restricted to Superusers
+<br> 
+
+### **Restricted to Superusers**
 
 **Add Product Page**
   - **Add Product form**: allows the superuser to add a new product to the shop.
@@ -275,8 +277,60 @@ Included in the **website** is:
 
 #### [Back to top](<#contents>)
 
+<br>
+
 ## **Database**
 ***
 
 **Security:**
 Database connection details are for security reasons, set up in an [env.py](https://pypi.org/project/env.py/) and not uploaded to GitHub. This is to ensure that the database and connection details are not visible to users. In production, these are stored in Heroku.
+
+#### [Back to top](<#contents>)
+
+<br>
+
+## **Technologies**
+***
+
+### **Languages**
+* [HTML5](https://en.wikipedia.org/wiki/HTML5 "HTML5") - provides the content and structure for the website.
+* [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets "CSS3") - provides the styling.
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) -provides interactivity and functionality.
+* [Python](https://www.python.org/) - provides the back-end logic and the means to run/view the website.
+
+### **Frameworks & Libraries**
+* [Bootstrap](https://getbootstrap.com/) is used to create the layout of the project and some styling.
+* [jQuery](https://jquery.com/) complements JavaScript.
+* [Django](https://www.djangoproject.com/) is used to get rapid development and a clean, pragmatic design.
+* [PostgresSQL](https://www.postgresql.org/) is the database used to store all the models in the production environment. 
+* [SQLite](https://sqlite.org/index.html) is used as the database in the development environment.
+* [AWS](https://aws.amazon.com/) is used to host media and static files on the cloud.
+* [Stripe](https://stripe.com/) is used for payment handling.
+* [Font Awesome](https://fontawesome.com/) is used to provide some icons.
+
+#### Project Management
+* [Git](https://git-scm.com/) is used for version control.
+* [GitHub](https://github.com/) is used to host the project.
+* [Heroku](https://www.heroku.com/) is used to deploy the app.
+* [Gitpod](https://gitpod.io/) was used to develop the website.
+
+#### Design
+* [Figma](https://figma.com/ "Figma") - used to create the project's wireframes, designs, and logo.
+* [FavIcon](https://favicon.io/) -used for compressing logo into favIcons.
+* [Unsplash](https://unsplash.com/) was used to get images for the project.
+* [TinyJPG](https://tinyjpg.com/) - used to reduce image file sizes.
+* [ILoveImages](https://www.iloveimg.com/) - used to reduce image file sizes.
+* [Techsini](https://techsini.com/multi-mockup/) -used to create the Mockup image in this README.
+
+
+#### Testing
+
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
+* [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) -used to inspect page elements, test different CSS styles, debug issues, and responsiveness.
+* [Responsive Design Checker](https://responsivedesignchecker.com/) -used to check responsiveness.
+* [W3C HTML Validator](https://validator.w3.org/) was used to check the HTML code for any errors.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS code for any errors.
+* [JS Hint](https://jshint.com/) was used to check the JavaScript code for any errors.
+* [PEP8](http://pep8online.com/) was used to check the Python code for any errors.
+
+#### [Back to top](<#contents>)
