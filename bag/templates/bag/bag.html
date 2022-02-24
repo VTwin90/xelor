@@ -28,9 +28,9 @@
     </div>
 
     <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-7">
+        <div class="col-12 col-md-7 col-lg-8 col-xxl-4">
             {% if bag_items %}
-                <div class="table-responsive rounded">
+                <div class="table-responsive rounded mx-auto">
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
@@ -129,16 +129,20 @@
                     </table>
                 </div>
             {% else %}
-                <p class="lead mb-5">Your bag is empty.</p>
-                <a href="{% url 'checkout' %}" class="primary_btn btn rounded-0 btn-lg">
-                    <span>SECURE CHECKOUT</span>
-                </a>
-                <a href="{% url 'products' %}" class="btn secondary_btn rounded-0 btn-lg">
-                    <span class="icon">
-                        <i class="fas fa-chevron-left"></i>
-                    </span>
-                    <span>KEEP SHOPPING</span>
-                </a>
+                <h4 class="lead mb-5 text-center">Your bag is empty.</h4>
+                <img class="img-fluid rounded" src="{{ MEDIA_URL }}empty_bag.png" alt="Empty bag Cat image">
+                <table class="table-responsive rounded d-flex justify-content-center">
+                    <tr>
+                        <td colspan="5" class="text-center">
+                            <a href="{% url 'products' %}" class="btn secondary_btn rounded-0 btn-lg mt-5 mb-5">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span>KEEP SHOPPING</span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             {% endif %}
         </div>
     </div>
