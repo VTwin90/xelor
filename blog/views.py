@@ -59,4 +59,32 @@ def add_post(request):
 
     return render(request, template, context)
 
-    
+
+@login_required
+def edit_post(request, blog_id):
+    """ Edit a blog post """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    blog = get_object_or_404(Blog, pk=blog_id)
+    if request.method == 'POST':
+        form = BlogForm(request.POST, request.FILES, instance=blog)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated blog post!')
+            return redirect(reverse('blog_post', args=[blog.id]))
+        else:
+            messages.error(request, ('Failed to update post. Please ensure '
+                                     'the form is valid.'))
+    else:
+        form = BlogForm(instance=blog)
+        messages.info(request, f'You are editing {blog.title}')
+
+    template = 'blog/edit_post.html'
+    context = {
+        'form': form,
+        'blog': blog,
+    }
+
+    return render(request, template, context)

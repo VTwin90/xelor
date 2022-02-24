@@ -19,6 +19,13 @@
                 <!-- post header -->
                 <h2 class="text-center my-5">{{ blog.title }}</h2>
 
+                <!-- edit/delete blog post -->
+                {% if request.user.is_superuser %}
+                    <small class="ml-3">
+                        <a href="{% url 'edit_post' blog.id %}">Edit</a> 
+                    </small>
+                {% endif %}
+
                 <!-- post image -->
                 <div class="image-container">
                     {% if blog.main_image %}
