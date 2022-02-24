@@ -141,7 +141,7 @@ To keep a consistent and modern style, and for easy readability, the font used i
 ### **Wireframes**
 |Mobile|Tablet|Desktop|Designs|                         
 |:-----:|:----:|:----:|:----:|
-|[Mobile](readme_images/wireframes/wireframes-mobile.jpg)| [Tablet](readme_images/wireframes/wireframes-tablet.jpg)| [Desktop](readme_images/wireframes/wireframes-desktop.jpg)| [Designs](readme_images/wireframes/designs.jpg)
+|[Mobile](readme-images/wireframes/wireframes-mobile.jpg)| [Tablet](readme-images/wireframes/wireframes-tablet.jpg)| [Desktop](readme-images/wireframes/wireframes-desktop.jpg)| [Designs](readme-images/wireframes/designs.jpg)
 
 <br>
 
