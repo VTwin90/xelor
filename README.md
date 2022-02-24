@@ -173,6 +173,8 @@ Included in the **website** is:
     - Add Product’ and ‘Product Management - Add Blog Post’ 
     <br>
 
+#### [Back to top](<#contents>)
+
 - **Footer**:
   - **Contact Us**: allows users to contact the site owner.
   - **Follow Us**: allows users to view the shop's (fake) social accounts.
@@ -219,6 +221,7 @@ Included in the **website** is:
   - **Default Delivery Information**: allows the user to save their delivery address so they don't have to type it in every time they purchase any products.
   - **Order History**: allows the user to keep track of their past orders.
 
+#### [Back to top](<#contents>)
 
 **Blog Page**
   - **Blog Post**: each product has an image and title. If the user is a superuser, they can update or delete the blog post directly on this page.
@@ -240,6 +243,8 @@ Included in the **website** is:
 **Logout Page**
 - **Logout Confirmation button**: allows the user to log out from their account.
 
+#### [Back to top](<#contents>)
+
 ##### Restricted to Superusers
 
 **Add Product Page**
@@ -257,6 +262,7 @@ Included in the **website** is:
 **Error Pages**
   - **400, 403, 404, and 500 Error Pages**: allow the user to know more about the error and allow them to navigate back to the page easily.
 
+#### [Back to top](<#contents>)
 <br>
 
 ### **Features Left to Implement(Possible features)**
@@ -266,3 +272,11 @@ Included in the **website** is:
 - A rating/like-system to showcase the most popular watches from customers.
 - Section(with avatar images): where users can give feedback on products and blog posts. 
 - Including more product images to improve users' view and perspective of the products.
+
+#### [Back to top](<#contents>)
+
+## **Database**
+***
+
+**Security:**
+Database connection details are for security reasons, set up in an [env.py](https://pypi.org/project/env.py/) and not uploaded to GitHub. This is to ensure that the database and connection details are not visible to users. In production, these are stored in Heroku.
