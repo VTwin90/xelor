@@ -139,9 +139,9 @@ To keep a consistent and modern style, and for easy readability, the font used i
 <br>
 
 ### **Wireframes**
-|Sketches|Wireframes|Designs|                         
-|:-----:|:----:|:----:|
-|[Sketches](readme/wireframes/sketches.jpg)| [Wireframes](readme/wireframes/wireframes.jpg) | [Designs](readme/wireframes/designs.jpg)
+|Mobile|Tablet|Desktop|Designs|                         
+|:-----:|:----:|:----:|:----:|
+|[Mobile](readme_images/wireframes/wireframes-mobile.jpg)| [Tablet](readme_images/wireframes/wireframes-tablet.jpg)| [Desktop](readme_images/wireframes/wireframes-desktop.jpg)| [Designs](readme_images/wireframes/designs.jpg)
 
 <br>
 
