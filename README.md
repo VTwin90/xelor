@@ -458,3 +458,26 @@ Once the project has been loaded into an IDE of choice, run the following comman
 3. Creates a duplicate of the full project in your GitHub Repository.
 
 #### [Back to top](<#contents>)
+
+<br>
+
+## **Credits**
+***
+
+### **Code**
+
+- This project was developed following the Boutique Ado project tutorial from [Code Institute](https://codeinstitute.net/). 
+<br>The code was adapted to fit the purpose of this project.
+
+General:
+* https://www.w3schools.com
+* https://css-tricks.com
+* https://getbootstrap.com/
+* https://developer.mozilla.org/
+* https://flask.palletsprojects.com/en/2.0.x/
+* CI Boutique Ado Tutorial
+
+Back to top button code:
+* https://mdbootstrap.com/docs/standard/extended/back-to-top/
+
+### **Media & Content**
