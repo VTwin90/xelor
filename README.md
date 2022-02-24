@@ -481,3 +481,20 @@ Back to top button code:
 * https://mdbootstrap.com/docs/standard/extended/back-to-top/
 
 ### **Media & Content**
+
+<br>
+
+### **Acknowledgments**
+I would like to thank my mentor **[Antonija Šimić](https://github.com/tonkec)** for all help throughout our project calls.
+
+Thanks to **[Daisy McGirr](https://github.com/Daisy-McG)** for letting me use her test template and structure for making my testing document.
+
+Thanks to the **CI Slack Community** for feedback, motivation, and assistance. 
+
+Also, a thank you to my family and friends, who have helped me throughout this project with motivation, help, feedback, and testing.
+
+**This project is for educational use only and was created for the Code Institute Module of Full Stack Frameworks with Django**
+
+**Created by Vanja Torp 2022**
+
+#### [Back to top](<#contents>)
