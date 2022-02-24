@@ -257,4 +257,12 @@ Included in the **website** is:
 **Error Pages**
   - **400, 403, 404, and 500 Error Pages**: allow the user to know more about the error and allow them to navigate back to the page easily.
 
+<br>
+
 ### **Features Left to Implement(Possible features)**
+- Add pagination to the products page.
+- Update the blog content to be more readable.
+- Add a wishlist function and more to the profile.
+- A rating/like-system to showcase the most popular watches from customers.
+- Section(with avatar images): where users can give feedback on products and blog posts. 
+- Including more product images to improve users' view and perspective of the products.
