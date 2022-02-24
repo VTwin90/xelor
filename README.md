@@ -353,3 +353,25 @@ Python Code must pass through the **[PEP8 Validator](http://pep8online.com/ "PEP
 #### [Back to top](<#contents>)
 
 <br>
+
+## **Deployment**
+***
+### **Requirements** 
+- Python3 
+- Github account 
+- Heroku account
+- An IDE of choice 
+- Stripe account
+- AWS Amazon account
+- Gmail account
+
+### **Project Creation**
+Navigate to the **[template](https://github.com/Code-Institute-Org/gitpod-full-template)** and click 'Use this template. Put in Repository name (velour) and check the Include all branches checkbox. Then navigate to the new **[repository](https://github.com/VTwin90/xelor)**.
+
+The following commands were used for version control throughout the project:
++ ```git status``` (checks which files have been modified or added, and ready to be committed)
++ ```git add . ``` or ```git add <filename>``` (add all changed files or specific files within the project directory to be committed)
++ ```git commit -m "[TYPE] Reason"``` (commit changes to the local repository)
++ ```git push``` (push all committed changes to the GitHub repository)
+
+#### [Back to top](<#contents>)
