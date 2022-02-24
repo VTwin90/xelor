@@ -433,3 +433,28 @@ The live link for the site is here: **[https://vgames-app.herokuapp.com/](https:
 2. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
 
 #### [Back to top](<#contents>)
+
+### **Hosting static and media files with AWS**
+This project uses the AWS S3 bucket to host the static and media files. To host them you will need an account and create an S3 bucket and set a group, policy, and user in the IAM environment.
+
+### **Create a local clone**
+1. Open GitHub and navigate to the repository **[here](https://github.com/VTwin90/xelor)**.
+2. Click the Code drop-down menu. 
+3. Options: 
+* Download the ZIP file, unpack locally and open with IDE.  
+* Copy git URL from HTTPS dialogue box. 
+4. Open your chosen IDE and open the terminal in a directory. 
+5. Use the ```git clone``` command with the copied git URL after.
+6. Clone of the project is created locally on your machine.
+
+Once the project has been loaded into an IDE of choice, run the following command in the shell to install all the required packages:
+> pip install -r requirements.txt
+
+
+### **Fork Project**
+
+1. Navigate to the GitHub Repository you want to **[fork](https://github.com/VTwin90/xelor)**.
+2. On the top right of the page under the header, click the fork button.
+3. Creates a duplicate of the full project in your GitHub Repository.
+
+#### [Back to top](<#contents>)
