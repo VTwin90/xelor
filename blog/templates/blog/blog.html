@@ -34,13 +34,13 @@
                                 {% else %}
                                 <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.title }}">
                                 {% endif %}
-                                <div class="post-info text-center">
+                                <div class="text-center mt-2">
                                     <p>{{ post.title }}</p>
                                 </div>
                             </a>
                             <!-- edit/delete blog post -->
                             {% if request.user.is_superuser %}
-                            <small class="ml-3 text-center">
+                            <small class="mb-2 text-center">
                                 <a href="{% url 'edit_post' post.id %}">Edit</a>
                                 <a class="text-danger" href="{% url 'delete_post' post.id %}">Delete</a>
                             </small>
