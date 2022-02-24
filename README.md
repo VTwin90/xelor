@@ -148,3 +148,113 @@ To keep a consistent and modern style, and for easy readability, the font used i
 ### **Design changes**
 
 #### [Back to top](<#contents>)
+
+<br>
+
+## **Features**
+***
+
+### **Existing Features**
+
+Included in the **website** is:
+
+- **Navbar**: gives consistency and allows users to navigate the site easily and intuitively.
+- **Xelor Logo**: allows users to go back to the Home page from any part of the page.
+- **Home mobile**: allows users to go back to the Home page from any part of the page.
+- **Omega, Rolex, Gucci, Armani**: allows users to see products for specific brands.
+- **Contact**: allows users to contact the site owner.
+- **Blog**: allows users to check out the site Xelor blog. 
+- **Shopping Bag Icon**: allows users to access the Shopping Bag page from any part of the site.
+- **Back to top button**: allows the user to go back to the top of the page when scrolling down.
+- **Account/User Icon**: opens a dropdown that shows different features depending on the user type:
+    - Anonymous users can see a ‘Register’ and a ‘Login’ link
+    Registered users can see a ‘My Profile’, and ‘logout’ links
+    Superusers can see the same ‘My Profile’,  and ‘Logout’ links. Including ‘Product Management 
+    - Add Product’ and ‘Product Management - Add Blog Post’ 
+    <br>
+
+- **Footer**:
+  - **Contact Us**: allows users to contact the site owner.
+  - **Follow Us**: allows users to view the shop's (fake) social accounts.
+  - **Copyright**:  showcase the owners of the site. 
+
+**Home Page**:
+  - **Landing image**: works as a call to action and includes a button for the users to go directly to the All Products page.
+
+**Products Page**:
+  - **Products Count**: shows the user how many products there are. If the user filters by category, it will show how many products there are in that specific category
+  - **Filtering**: allows the user to filter the products by price, name, and category.
+  - **Product**: each product has an image, name, size, and price so the user can quickly identify and find the product they are interested in. 
+  If the user is a superuser, they will see an **Update link** and a **Delete link**.
+ 
+**Product Detail Page**:
+  - Each product page provides some information about and description  of the product:
+    - **Product Name and Price**
+    - **Size**
+  - **Quantity button and add to bag**: allow the user to adjust the amount they want of this product and add it to their shopping bag
+  - If the user is a superuser, they'll see an **Update link** and a **Delete link**.
+
+**Bag Page**:
+  - For each product, the shopping bag will show the following information:
+    - **Product Image**
+    - **Product Name and Price**
+    - **SKU Number**
+    - **Quantity Selected**
+    - **Size Selected**
+  - Besides this information, the user can adjust the **quantity** and also **delete** the product and see each products' **subtotal** 
+  - - **Total**: allows the user to see the **Order Total**, the **Delivery Fee**, and the **Grand Total**
+  - **Secure Checkout button**: allows the user to go to the **secure checkout page** to proceed with the payment. Alternatively, the user can click on the **Keep Shopping** button.
+
+**Checkout Page**
+  - **Order Summary**: for each product, it includes the product image, name, quantity, and subtotal.
+  - **Total**: allows the user to see the **Order Total**, the **Delivery Fee**, and the **Grand Total**.
+  - **Form**: allows the user to fill in the form with their name, email, phone number, address, town, county, postal code, and country. The user can save this information to their profile.
+  - **Payment**: allows the user to fill in the form with their credit card details.
+  - **Pay button**: allows the user to confirm the details and complete their order. Alternatively, the user can click on the **Adjust Bag** button and go back to the bag page.
+
+**Checkout Success Page**
+  - **Order Information**: this includes the order number, order date, order details, delivering details, and billing info.
+
+**Profile Page**
+  - **Default Delivery Information**: allows the user to save their delivery address so they don't have to type it in every time they purchase any products.
+  - **Order History**: allows the user to keep track of their past orders.
+
+
+**Blog Page**
+  - **Blog Post**: each product has an image and title. If the user is a superuser, they can update or delete the blog post directly on this page.
+
+**Blog Post Page**
+  - **Title**
+  - **Author and Date**
+  - **Image**
+  - **Text**
+  - **Back to Blog Button**: this allows the user to go back to the main blog page. 
+  - If the user is a superuser, they'll see an **Update link** and a **Delete link**
+
+**Register Page**
+  - **Register form**: allows the user to register a new account by filling in the email, username, and password.
+
+**Login Page**
+- **Login form**: allows the user to login into their account.
+
+**Logout Page**
+- **Logout Confirmation button**: allows the user to log out from their account.
+
+##### Restricted to Superusers
+
+**Add Product Page**
+  - **Add Product form**: allows the superuser to add a new product to the shop.
+
+**Edit Product Page**
+  - **Edit Product form**: allows the superuser to update a product in the shop.
+
+**Add Blog Post Page**
+  - **Add Blog Post form**: allows the superuser to add a new post to the blog.
+
+**Edit Blog Post Page**
+  - **Edit Blog Post form**: allows the superuser to update a post in the blog.
+
+**Error Pages**
+  - **400, 403, 404, and 500 Error Pages**: allow the user to know more about the error and allow them to navigate back to the page easily.
+
+### **Features Left to Implement(Possible features)**
