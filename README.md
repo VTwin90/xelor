@@ -282,6 +282,10 @@ Included in the **website** is:
 ## **Database**
 ***
 
+![Database](readme-images/database.jpg)
+
+<br>
+
 **Security:**
 Database connection details are for security reasons, set up in an [env.py](https://pypi.org/project/env.py/) and not uploaded to GitHub. This is to ensure that the database and connection details are not visible to users. In production, these are stored in Heroku.
 
