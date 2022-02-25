@@ -15,4 +15,3 @@ class BlogAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Blog, BlogAdmin)
-

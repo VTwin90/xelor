@@ -1,5 +1,5 @@
 from django.shortcuts import (
-    render, redirect, reverse, 
+    render, redirect, reverse,
     get_object_or_404
 )
 from django.contrib import messages
@@ -101,5 +101,3 @@ def delete_post(request, blog_id):
     blog.delete()
     messages.success(request, 'Blog post deleted!')
     return redirect(reverse('blog'))
-
-    
