@@ -119,7 +119,7 @@ The style is based on a minimalistic, readable, and contrasting design for easy 
 ### **Color Scheme**
 The general color scheme is white, red, grey and black. These colors will create a consistent style for the site. There are also other colors; from the hero image and product/blog images. 
 
-![Color Scheme](readme/images/colorscheme.png)
+![Color Scheme](readme-images/colorscheme.png)
 
 <br>
 
