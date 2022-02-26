@@ -72,14 +72,16 @@
                     <li class="list-inline-item">
                         <a class="nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center icon">
-                                <p class="my-0">
-                                    {% if product_count %}
-                                        {{ product_count|floatformat:0 }}
-                                    {% else %}
-                                    0
-                                    {% endif %}
-                                </p>
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <div>
+                                    <p class="my-0 quantity-text">
+                                        {% if product_count %}
+                                            {{ product_count|floatformat:0 }}
+                                        {% else %}
+                                        0
+                                        {% endif %}
+                                    </p>
+                                    <i class="fas fa-shopping-bag fa-lg"></i>
+                                </div>
                             </div>
                         </a>
                     </li>

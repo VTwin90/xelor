@@ -129,8 +129,14 @@ label {
 .primary_btn,
 .update_icon,
 .remove_icon 
+.nav-item,
 .nav-link {
     cursor: pointer;
+}
+
+.quantity-text {
+    color: #D8000E;
+    margin-left: 10px;
 }
 
 
