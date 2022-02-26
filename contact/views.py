@@ -1,11 +1,8 @@
 from django.shortcuts import (
-    render, redirect, reverse,
-    get_object_or_404, HttpResponse
+    render, redirect, reverse
 )
-from django.views.decorators.http import require_POST
-from django.contrib import messages
-from django.conf import settings
 
+from django.contrib import messages
 from .forms import ContactForm
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
@@ -21,23 +18,20 @@ def contact(request):
             'message': request.POST['message'],
         }
         contact_form = ContactForm(form_data)
+
         if contact_form.is_valid():
-            form = contact_form.save(commit=False)
-            form.save()
-            request.session['save_info'] = 'save-info' in request.POST
-            messages.success
-            (request, 'Successfully sent message,'
-                'we will be in touch with you soon!')
+            messages.success(request, 'Successfully sent message,'
+                             'we will be in touch with you soon!')
+            return redirect(reverse('contact'))
         else:
-            messages.error
-            (request, 'Failed to send message.'
-                'Please ensure the form is valid.')
+            messages.error(request, 'Failed to send message.'
+                           'Please ensure the form is valid.')
 
         # Attempt to prefill form with userinfo
         if request.user.is_authenticated:
             try:
                 profile = UserProfile.objects.get(user=request.user)
-                form = ContactForm(initial={
+                order_form = OrderForm(initial={
                     'full_name': profile.user.get_full_name(),
                     'email': profile.user.email,
                 })
