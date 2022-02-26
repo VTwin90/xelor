@@ -26,11 +26,11 @@ def contact(request):
             form.save()
             request.session['save_info'] = 'save-info' in request.POST
             messages.success
-            (request, 'Successfully sent message,
+            (request, 'Successfully sent message,'
                 'we will be in touch with you soon!')
         else:
             messages.error
-            (request, 'Failed to send message.
+            (request, 'Failed to send message.'
                 'Please ensure the form is valid.')
 
         # Attempt to prefill form with userinfo
