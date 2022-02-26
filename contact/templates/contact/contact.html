@@ -21,7 +21,7 @@
         </div>
     </div>
     <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 col-xl-4">
             <form method="POST" action="{% url 'contact' %}" class="form contact-form mb-2" required>
                 {% csrf_token %}
                     {{ contact_form.full_name | as_crispy_field }}

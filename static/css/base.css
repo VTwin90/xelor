@@ -1,9 +1,13 @@
 html, body {
     height: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background: url('/media/hero_img.jpg') no-repeat center center fixed; 
     background-size: cover;
     height: calc(100vh - 164px);
@@ -126,11 +130,8 @@ label {
     cursor: pointer;
 }
 
-.qty_input {
-    width: 150px;
-}
 
-.input-group{
+.input-group.input-bag{
     width: max-content;
 }
 
@@ -196,6 +197,10 @@ label {
     margin: 15px 0px 15px 0px;
 }
 
+.product-details-container{
+   text-align: center;
+}
+
 /* Footer */
 
 hr.footer{
@@ -206,16 +211,18 @@ hr.footer{
 
 footer {
     background-color: #FFF;
-    width: 100%;
+    width: 100vw;
     bottom: 0;
+    margin-top: auto;
 }
 
 #footer-bottom{
     margin: auto;
     padding: 15px;
-    width: 100%;
+    width: 100vw;
     font-size: large;
     background-color: #555;
+    margin-top: auto;
 }
 
 .footer-icons{
