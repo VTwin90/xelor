@@ -9,7 +9,7 @@
 
 <p class="text-center">{% trans 'Are you sure you want to sign out?' %}</p>
 
-<form method="post" action="{% url 'account_logout' %}" class="d-flex justify-content-center">
+<form method="post" action="{% url 'account_logout' %}" class="mx-auto d-flex justify-content-center">
   {% csrf_token %}
   {% if redirect_field_value %}
   <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
