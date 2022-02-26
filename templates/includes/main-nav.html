@@ -1,5 +1,5 @@
 <div class="collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
+    <ul class="navbar-nav w-auto mx-auto text-center">
         <li class="nav-item d-block d-md-none">
             <a class="font-weight-bold nav-link mr-5" href="{% url 'home' %}" id="home-link">
                 HOME
@@ -29,7 +29,7 @@
             <a class="font-weight-bold nav-link mr-5" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 FIND YOUR WATCH
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+            <div class="dropdown-menu border-0 text-center" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">BY PRICE</a>
                 <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">NEW ARRIVALS</a>
                 <a href="{% url 'products' %}" class="dropdown-item">ALL PRODUCTS</a>
