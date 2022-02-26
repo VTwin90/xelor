@@ -52,6 +52,10 @@ p {
     margin-left: 200px;
 }
 
+.navbar-brand {
+    margin: 0px 0px 0px 200px;
+}
+
 label {
     color: #555555;
 }
@@ -254,5 +258,35 @@ footer {
 
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-brand {
+        margin: 0px 0px 0px 250px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .navbar-brand {
+        margin: 0px 0px 0px 290px;
+    }
+}
+
+@media (min-width: 2100px) {
+    .navbar-brand {
+        margin: 0px 0px 0px 350px;
+    }
+}
+
+@media (min-width: 2300px) {
+    .navbar-brand {
+        margin: 0px 0px 0px 400px;
+    }
+}
+
+@media (min-width: 3000px) {
+    .navbar-brand {
+        margin: 0px 0px 0px 500px;
     }
 }
