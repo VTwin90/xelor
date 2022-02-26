@@ -5,8 +5,6 @@ html, body {
 }
 
 body{
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     background: url('/media/hero_img.jpg') no-repeat center center fixed; 
     background-size: cover;
@@ -58,6 +56,10 @@ p {
 
 .navbar-brand {
     margin: 0px 0px 0px 200px;
+}
+
+.dropdown-menu {
+    margin-left: -100px;
 }
 
 label {
@@ -126,12 +128,13 @@ label {
 .btt-link,
 .primary_btn,
 .update_icon,
-.remove_icon {
+.remove_icon 
+.nav-link {
     cursor: pointer;
 }
 
 
-.input-group.input-bag{
+.input-group.input-bag {
     width: max-content;
 }
 
