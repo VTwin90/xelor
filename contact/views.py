@@ -3,9 +3,8 @@ from django.shortcuts import (
 )
 
 from django.contrib import messages
-from .forms import ContactForm
 from profiles.models import UserProfile
-from profiles.forms import UserProfileForm
+from .forms import ContactForm
 
 
 def contact(request):
@@ -18,29 +17,25 @@ def contact(request):
             'message': request.POST['message'],
         }
         contact_form = ContactForm(form_data)
-
         if contact_form.is_valid():
+            form = contact_form.save(commit=False)
+            form.save()
+            request.session['save_info'] = 'save-info' in request.POST
             messages.success(request, 'Successfully sent message,'
                              'we will be in touch with you soon!')
-            return redirect(reverse('contact'))
         else:
             messages.error(request, 'Failed to send message.'
                            'Please ensure the form is valid.')
 
-        # Attempt to prefill form with userinfo
-        if request.user.is_authenticated:
-            try:
-                profile = UserProfile.objects.get(user=request.user)
-                order_form = OrderForm(initial={
-                    'full_name': profile.user.get_full_name(),
-                    'email': profile.user.email,
-                })
-            except UserProfile.DoesNotExist:
-                contact_form = ContactForm()
-        else:
-            contact_form = ContactForm()
+    if request.user.is_authenticated:
+        contact_form = ContactForm(initial={
+            'full_name': request.user.username,
+            'email': request.user.email,
+        })
+    else:
+        contact_form = ContactForm()
 
-    contact_form = ContactForm()
+
     template = 'contact/contact.html'
     context = {
         'contact_form': contact_form,
