@@ -39,7 +39,7 @@
 
     <title>Xelor {% block extra_title %}{% endblock %}</title>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-10 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -126,7 +126,7 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="mt-auto">
+    <footer class="mt-auto" id="footer">
         <hr class="my-0 mt-2 mb-3 footer">
         <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
             <i class="fas fa-chevron-circle-up fa-2x"></i>

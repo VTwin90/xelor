@@ -58,7 +58,8 @@ p {
     margin: 0px 0px 0px 200px;
 }
 
-.dropdown-menu.margin-dropdown {
+.dropdown-menu.margin-dropdown,
+.dropdown-menu.margin-dropdown-search  {
     margin-left: -100px;
 }
 
@@ -240,6 +241,11 @@ footer {
 }
 
 /* -------------------------------- Media Queries */
+@media (max-width: 285px) {
+    .dropdown-menu.margin-dropdown-search{
+        margin-left: -20px;
+    }
+} 
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
