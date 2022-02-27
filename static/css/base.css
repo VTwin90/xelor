@@ -105,6 +105,13 @@ label {
     color: #C4C4C4;
 }
 
+.icon:hover,
+.icon:active,
+.icon:focus {
+    background: #FFF; 
+    color: #D8000E;
+}
+
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -238,6 +245,12 @@ footer {
 
 .footer-icons{
     color: #555;
+    width: 40px;
+    cursor: pointer
+}
+
+.footer-link {
+    color: #fff;
 }
 
 /* -------------------------------- Media Queries */
