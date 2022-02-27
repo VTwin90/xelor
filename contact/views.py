@@ -35,7 +35,6 @@ def contact(request):
     else:
         contact_form = ContactForm()
 
-
     template = 'contact/contact.html'
     context = {
         'contact_form': contact_form,
