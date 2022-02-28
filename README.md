@@ -1,7 +1,7 @@
 # **Milestone 4: XELOR**
 
 ### **Project - Full-Stack Frameworks with Django - Code Institute.**
-This is the fourth milestone project from CI with a focus on HTML, CSS, JavaScript, Python+Django, relational database(Postgres), stripe payments, and AWS. The point is to build a full-stack site based on business logic used to control a centrally-owned dataset. Also, to set up an authentication mechanism. XELOR is an e-commerce store for unisex luxury watches with brands like Omega, Rolex, Armani, and Gucci. 
+This is the fourth milestone project from CI with a focus on HTML, CSS, JavaScript, Python+Django, relational database(Postgres), stripe payments, and AWS. The project goal is to build a full-stack site based on business logic used to control a centrally-owned dataset. Also, to set up an authentication mechanism. XELOR is an e-commerce store for unisex luxury watches with brands like Omega, Rolex, Armani, and Gucci. 
 
 A deployed link to the website can be found **[here](https://xelor-watches.herokuapp.com/)**.
 
@@ -10,7 +10,6 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 ## **Contents**
 ***
 - [**User Experience (UX)**](<#user-experience-(ux)>)
-  - [Project Goals](<#project-goals>)
   - [Importance and Feasibility chart](<#importance-and-feasibility-chart>)
   - [User Stories](<#user-stories>)
   - [Design Choices from UXD](<#design-choices-from-uxd>)
@@ -88,6 +87,28 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 - As a **site owner** I want to be able to remove products.
 - As a **site owner** I want to be able to edit/update a blog post.
 - As a **site owner** I want to be able to delete a blog post
+
+#### [Back to top](<#contents>)
+
+<br>
+### **Importance and Feasibility chart**
+
+**Opportunity/Problem** | **Importance** | **Viability/Feasibility**
+| :--- | ---: | :---:
+A. CRUD Functionality | 5 | 5
+B. Postgress to store data | 5 | 5
+C. Login Functionality | 5 | 5
+D. Register Functionality | 5 | 5 
+E. Logout Functionality | 5 | 5 
+F. Showcase Products | 5 | 5 
+G. Ability to search for products | 3 | 4 
+H. Responsive design | 5 | 5 
+I. Profile | 5 | 5 
+J. Contact page, form, response, and sending an email.| 3 | 4 
+K. Payment functionality| 5 | 5 
+L. 404 and 500 pages | 3 | 5 
+M. Navigation | 5 | 5 
+N. Order and verification confirmation email | 4 | 4 
 
 #### [Back to top](<#contents>)
 
@@ -492,13 +513,25 @@ General:
 * https://css-tricks.com
 * https://getbootstrap.com/
 * https://developer.mozilla.org/
-* https://flask.palletsprojects.com/en/2.0.x/
 * CI Boutique Ado Tutorial
 
 Back to top button code:
 * https://mdbootstrap.com/docs/standard/extended/back-to-top/
 
+
 ### **Media & Content**
+
+## Hero Image
+* https://unsplash.com/photos/WwJhYcX-pFI
+
+## Blog Posts and Images
+* https://www.omegawatches.com/en-us/
+
+## Product Images and Descriptions:
+* https://www.omegawatches.com/en-us/
+* https://www.berrysjewellers.co.uk/
+
+Logo and other images, as well as all other content, are owned by the site owner.
 
 <br>
 
@@ -508,6 +541,8 @@ I would like to thank my mentor **[Antonija Šimić](https://github.com/tonkec)*
 Thanks to **[Daisy McGirr](https://github.com/Daisy-McG)** for letting me use her test template and structure for making my testing document.
 
 Thanks to the **CI Slack Community** for feedback, motivation, and assistance. 
+
+Thanks to tutor support for helping me with my contact form and general enquiries. 
 
 Also, a thank you to my family and friends, who have helped me throughout this project with motivation, help, feedback, and testing.
 
