@@ -249,3 +249,15 @@ Added d-flex flex-column h-100 to body in htm customized from:
 	https://radu.link/make-footer-stay-bottom-page-bootstrap/
 
 And added a empty row and col to not let footer cover to much of the front-page.
+
+## Quantity button 
+
+**Issue:**
+Being able to write in your own quantity and go beyond the limit. 
+
+**Resolution:**
+Added this to the quantity javascript:
+$("[type='number']").keypress(function (evt) {
+    evt.preventDefault();
+});
+

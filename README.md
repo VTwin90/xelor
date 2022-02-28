@@ -146,6 +146,16 @@ To keep a consistent and modern style, and for easy readability, the font used i
 
 ### **Design changes**
 
+* No extra underneath the landing/home page, with blog, info etc. 
+* Simplified shopping bag UX. 
+* No subscribe to newsletter in Footer.
+* No wish list feature.
+* Changed Naw items: e.g from Rolex, Gucci, Armani to IWC Schaffhausen, Breitling and Patek Philippe.
+* Search design got simplified, and also changed to an input form on larger screens instead of as a click on with animation. 
+* Xelor copyright text from red to white color. 
+* Discover more button changed to shop now on home page.
+* Added a sort field and products home link and number of products.  
+
 #### [Back to top](<#contents>)
 
 <br>
