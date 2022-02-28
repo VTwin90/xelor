@@ -40,7 +40,6 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 ### **User stories**
 
 * As a **user**, I want to be able to navigate through the whole site smoothly.
-* As a **user**, I want to be able to navigate through the whole site smoothly.
 * As a **user**, I want to understand the purpose of the site upon loading it.
 * As a **user**, I want the website to be responsive so that I can view the web pages 
 <br> from my mobile, tablet, or desktop.
@@ -50,7 +49,7 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 - As a **user**, I want to be able to view a list of products so that I can select some to purchase.
 - As a **user**, I want to be able to view individual product details so that I can identify the price, 
 <br> description, and product image.
-- As a **user**, I want to be able to read access a blog. 
+- As a **user**, I want to be able to access a blog. 
 
 
 #### Registration and User Account
@@ -325,6 +324,7 @@ Database connection details are for security reasons, set up in an [env.py](http
 * [TinyJPG](https://tinyjpg.com/) - used to reduce image file sizes.
 * [ILoveImages](https://www.iloveimg.com/) - used to reduce image file sizes.
 * [Techsini](https://techsini.com/multi-mockup/) -used to create the Mockup image in this README.
+* [Photopea](https://www.photopea.com/ "Photopea") - used to fix the product images.
 
 
 #### Testing
@@ -332,10 +332,13 @@ Database connection details are for security reasons, set up in an [env.py](http
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse) for performance review.
 * [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) -used to inspect page elements, test different CSS styles, debug issues, and responsiveness.
 * [Responsive Design Checker](https://responsivedesignchecker.com/) -used to check responsiveness.
+* [Chrome Plugin HTML Validator](https://chrome.google.com/webstore/detail/html-validator/mpbelhhnfhfjnaehkcnnaknldmnocglk/related) was used to check the HTML code for any errors.
 * [W3C HTML Validator](https://validator.w3.org/) was used to check the HTML code for any errors.
 * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to check the CSS code for any errors.
 * [JS Hint](https://jshint.com/) was used to check the JavaScript code for any errors.
 * [PEP8](http://pep8online.com/) was used to check the Python code for any errors.
+
+
 
 #### [Back to top](<#contents>)
 
@@ -347,6 +350,7 @@ Database connection details are for security reasons, set up in an [env.py](http
 Test results can be found **[here](TESTING.md)**.
 
 HTML Code must pass through the **[W3C HTML Validator](https://validator.w3.org/ "W3C HTML Validator")**.
+* used a Chrome Html Validator Plugin since WC3 was not working before submission. 
 
 CSS Code must pass through the **[W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator")**.
 
