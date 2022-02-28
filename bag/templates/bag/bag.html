@@ -57,10 +57,10 @@
                                     <p class="my-0">${{ item.product.price }}</p>
                                 </td>
                                 <div class="d-flex justify-content-center">
-                                    <tr>
+                                    <td>
                                         <th scope="col">Qty</th>
                                         <th scope="col">Subtotal</th>
-                                    </tr>
+                                    </td>
                                 </div>
                                 <td class="py-3 w-25">
                                     <form class="form update-form" method="POST" action="{% url 'adjust_bag' item.item_id %}">
