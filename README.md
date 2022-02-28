@@ -5,13 +5,13 @@ This is the fourth milestone project from CI with a focus on HTML, CSS, JavaScri
 
 A deployed link to the website can be found **[here](https://xelor-watches.herokuapp.com/)**.
 
-![Mockup](readme/images/mockup.png)
+![Logo](readme-images/readme_logo.jpg)
 
 ## **Contents**
 ***
 - [**User Experience (UX)**](<#user-experience-(ux)>)
-  - [Importance and Feasibility chart](<#importance-and-feasibility-chart>)
   - [User Stories](<#user-stories>)
+  - [Importance and Feasibility chart](<#importance-and-feasibility-chart>)
   - [Design Choices from UXD](<#design-choices-from-uxd>)
     - [Color Scheme](<#color-scheme>)
     - [Images](<#images>)
@@ -32,6 +32,8 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 - [**Deployment**](<#deployment>)
 
 - [**Credits**](<#credits>)
+
+<br>
 
 ## **User Experience** (UX)
 ***
@@ -91,6 +93,7 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 #### [Back to top](<#contents>)
 
 <br>
+
 ### **Importance and Feasibility chart**
 
 **Opportunity/Problem** | **Importance** | **Viability/Feasibility**
@@ -203,12 +206,12 @@ Included in the **website** is:
     - Add Product’ and ‘Product Management - Add Blog Post’ 
     <br>
 
-#### [Back to top](<#contents>)
-
 - **Footer**:
   - **Contact Us**: allows users to contact the site owner.
   - **Follow Us**: allows users to view the shop's (fake) social accounts.
   - **Copyright**:  showcase the owners of the site. 
+
+### [Back to top](<#contents>)
 
 **Home Page**:
   - **Landing image**: works as a call to action and includes a button for the users to go directly to the All Products page.
@@ -233,8 +236,8 @@ Included in the **website** is:
     - **SKU Number**
     - **Quantity Selected**
     - **Size Selected**
-  - Besides this information, the user can adjust the **quantity** and also **delete** the product and see each products' **subtotal** 
-  - - **Total**: allows the user to see the **Order Total**, the **Delivery Fee**, and the **Grand Total**
+  - Besides this information, the user can adjust the **quantity** and also **delete** the product and see each products' **subtotal**
+      - **Total**: allows the user to see the **Order Total**, the **Delivery Fee**, and the **Grand Total**
   - **Secure Checkout button**: allows the user to go to the **secure checkout page** to proceed with the payment. Alternatively, the user can click on the **Keep Shopping** button.
 
 **Checkout Page**
@@ -349,12 +352,11 @@ Database connection details are for security reasons, set up in an [env.py](http
 * [Gitpod](https://gitpod.io/) was used to develop the website.
 
 #### Design
-* [Figma](https://figma.com/ "Figma") - used to create the project's wireframes, designs, and logo.
+* [Figma](https://figma.com/ "Figma") - used to create the project's wireframes, designs, database and logo.
 * [FavIcon](https://favicon.io/) -used for compressing logo into favIcons.
 * [Unsplash](https://unsplash.com/) was used to get images for the project.
 * [TinyJPG](https://tinyjpg.com/) - used to reduce image file sizes.
 * [ILoveImages](https://www.iloveimg.com/) - used to reduce image file sizes.
-* [Techsini](https://techsini.com/multi-mockup/) -used to create the Mockup image in this README.
 * [Photopea](https://www.photopea.com/ "Photopea") - used to fix the product images.
 
 
@@ -381,7 +383,7 @@ Database connection details are for security reasons, set up in an [env.py](http
 Test results can be found **[here](TESTING.md)**.
 
 HTML Code must pass through the **[W3C HTML Validator](https://validator.w3.org/ "W3C HTML Validator")**.
-* used a Chrome Html Validator Plugin since WC3 was not working before submission. 
+* Used a Chrome Html Validator Plugin since WC3 was not working before submission. 
 
 CSS Code must pass through the **[W3C CSS Validator](https://jigsaw.w3.org/css-validator/ "W3C CSS Validator")**.
 
@@ -403,6 +405,8 @@ Python Code must pass through the **[PEP8 Validator](http://pep8online.com/ "PEP
 - Stripe account
 - AWS Amazon account
 - Gmail account
+
+<br>
 
 ### **Project Creation**
 Navigate to the **[template](https://github.com/Code-Institute-Org/gitpod-full-template)** and click 'Use this template. Put in Repository name (velour) and check the Include all branches checkbox. Then navigate to the new **[repository](https://github.com/VTwin90/xelor)**.
@@ -430,6 +434,8 @@ The following commands were used for version control throughout the project:
 
 The live link for the site is here: **[https://vgames-app.herokuapp.com/](https://vgames-app.herokuapp.com/)**
 
+<br>
+
 **Set up the connection to Github Repository:**
 
 1. Click the deploy tab and select GitHub - Connect to GitHub.
@@ -437,6 +443,7 @@ The live link for the site is here: **[https://vgames-app.herokuapp.com/](https:
 3. Enter the repository name(xelor) for the project and click search.
 4. Once the repo has been found, click the connect button.
 
+<br>
 
 **Add PostgreSQL Database:**
 
@@ -445,6 +452,8 @@ The live link for the site is here: **[https://vgames-app.herokuapp.com/](https:
 3. Click on it when it appears.
 4. Select Plan name Hobby Dev - Free.
 5. Click Submit Order Form.
+
+<br>
 
 **Set environment variables:**
 
@@ -467,11 +476,15 @@ The live link for the site is here: **[https://vgames-app.herokuapp.com/](https:
 
 *Please note the values for these variables depend on your setup. For security reasons, I will not add the values here.*
 
+<br>
+
 **Enable automatic deployment:**
 1. Click the Deploy tab
 2. In the Automatic deploys section, choose the branch you want to deploy from then click Enable Automation Deploys.
 
 #### [Back to top](<#contents>)
+
+<br> 
 
 ### **Hosting static and media files with AWS**
 This project uses the AWS S3 bucket to host the static and media files. To host them you will need an account and create an S3 bucket and set a group, policy, and user in the IAM environment.
@@ -518,16 +531,17 @@ General:
 Back to top button code:
 * https://mdbootstrap.com/docs/standard/extended/back-to-top/
 
+<br>
 
 ### **Media & Content**
 
-## Hero Image
+#### Hero Image
 * https://unsplash.com/photos/WwJhYcX-pFI
 
-## Blog Posts and Images
+#### Blog Posts and Images
 * https://www.omegawatches.com/en-us/
 
-## Product Images and Descriptions:
+#### Product Images and Descriptions:
 * https://www.omegawatches.com/en-us/
 * https://www.berrysjewellers.co.uk/
 
