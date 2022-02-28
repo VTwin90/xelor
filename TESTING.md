@@ -194,4 +194,58 @@ Tests Covering story:
 
 <br>
 
+# Issues and Resolutions
 
+## Console log: 
+
+**Issue:**
+
+Checked console for payment and getting:
+
+1.Uncaught IntegrationError: Please call Stripe() with your publishable key. You used an empty string.
+    at Yr ((index):1:186232)
+    at new e ((index):1:254579)
+    at dc ((index):1:284719)
+    at stripe_elements.js:9:16
+
+**Resolution:**
+Removed the stripe_elements.js file on checkout_success template.
+
+## Stripe & Email: 
+
+**Issue:**
+Issue not getting verification email or order confirmation email.
+
+**Resolution:**
+Removed DEVELOPMENT variable in Heroku.
+
+**Issue:**
+Issue not getting verification email or order confirmation email another time.
+
+**Resolution:**
+It was the gmail accounts app security that had been disabled. Went through the process of getting it restarted, and added new password to Heroku.
+
+## Contact Form: 
+
+**Issue:**
+Not being automatically filled in with user info if they are logged in. 
+
+**Resolution:**
+Assistance from tutor support on this one, tried a couple of things before adding this to contact view: 
+
+    if request.user.is_authenticated:
+        contact_form = ContactForm(initial={
+            'full_name': request.user.username,
+            'email': request.user.email,
+        })
+
+## Footer: 
+
+**Issue:**
+Issue not getting the footer to stick to the bottom.
+
+**Resolution:**
+Added d-flex flex-column h-100 to body in htm customized from:
+	https://radu.link/make-footer-stay-bottom-page-bootstrap/
+
+And added a empty row and col to not let footer cover to much of the front-page.
