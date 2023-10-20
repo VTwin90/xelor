@@ -1,9 +1,9 @@
 # **Milestone 4: XELOR**
 
 ### **Project - Full-Stack Frameworks with Django - Code Institute.**
-This is the fourth milestone project from CI with a focus on HTML, CSS, JavaScript, Python+Django, relational database(Postgres), stripe payments, and AWS. The project goal is to build a full-stack site based on business logic used to control a centrally-owned dataset. Also, to set up an authentication mechanism. XELOR is an e-commerce store for unisex luxury watches with brands like Omega, Rolex, Armani, and Gucci. 
+This is the fourth milestone project from CI with a focus on HTML, CSS, JavaScript, Python+Django, relational database(Postgres), stripe payments, and AWS. The project goal is to build a full-stack site based on business logic used to control a centrally owned dataset. Also, to set up an authentication mechanism. XELOR is an e-commerce store for unisex luxury watches with brands like Omega, Rolex, Armani, and Gucci. 
 
-A deployed link to the website can be found **[here](https://xelor-watches.herokuapp.com/)**.
+A deployed link to the website can be found **[here](https://xelor-watches.onrender.com/)**.
 
 ![Logo](readme-images/readme_logo.jpg)
 
@@ -49,7 +49,7 @@ A deployed link to the website can be found **[here](https://xelor-watches.herok
 * As a **user**, I want to be able to contact the site owner.
 - As a **user**, I want to be able to view a list of products so that I can select some to purchase.
 - As a **user**, I want to be able to view individual product details so that I can identify the price, 
-<br> description, and product image.
+<br> description and product image.
 - As a **user**, I want to be able to access a blog. 
 
 
@@ -348,7 +348,8 @@ Database connection details are for security reasons, set up in an [env.py](http
 #### Project Management
 * [Git](https://git-scm.com/) is used for version control.
 * [GitHub](https://github.com/) is used to host the project.
-* [Heroku](https://www.heroku.com/) is used to deploy the app.
+* (Previous)[Heroku](https://www.heroku.com/) is used to deploy the app.
+* (Now)[Render](https://www.render.com/) is used to deploy the app.
 * [Gitpod](https://gitpod.io/) was used to develop the website.
 
 #### Design
@@ -400,7 +401,8 @@ Python Code must pass through the **[PEP8 Validator](http://pep8online.com/ "PEP
 ### **Requirements** 
 - Python3 
 - Github account 
-- Heroku account
+- Heroku account(Previous)
+- Render account(Now)
 - An IDE of choice 
 - Stripe account
 - AWS Amazon account
@@ -432,7 +434,7 @@ The following commands were used for version control throughout the project:
 4. Enter the app name.
 5. Select the region closest to you.
 
-The live link for the site is here: **[https://vgames-app.herokuapp.com/](https://vgames-app.herokuapp.com/)**
+The live link for the site is here: previous **[xelor-watches.herokuapp.com/](xelor-watches.herokuapp.com/)**, now: **[https://xelor-watches.onrender.com/](https://xelor-watches.onrender.com/)**
 
 <br>
 
